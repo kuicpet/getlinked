@@ -1,13 +1,16 @@
 import React from 'react'
-import Woman from '../assets/woman.png'
+import Idea from '../assets/idea.png'
 import Image from 'next/image'
-
-const Rules = () => {
+const Intro = () => {
   return (
     <section className='flex items-center w-full mt-[2rem] flex-col md:flex-row'>
+      <div className='w-1/2'>
+        <Image src={Idea} alt='' />
+      </div>
       <div className='md:w-1/2 w-full m-4'>
         <h4 className='text-[2rem] font-bold'>
-          Rules and <br /> <span className='text-[#D434FE]'>Guidelines</span>
+          Introduction to getlinked <br />{' '}
+          <span className='text-[#D434FE]'>tech Hackathon 1.0</span>
         </h4>
         <p className='text-[0.875rem] md:w-[80%] w-full'>
           Our tech hackathon is a melting pot of visionaries, and its purpose is
@@ -18,11 +21,8 @@ const Rules = () => {
           change the world, that's what we're all about!
         </p>
       </div>
-      <div className='w-1/2'>
-        <Image src={Woman} alt='' />
-      </div>
     </section>
   )
 }
 
-export default Rules
+export default Intro

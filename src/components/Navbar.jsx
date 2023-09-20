@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { Button } from '.'
 import Cancel from '../assets/Cancel.png'
 import Menu from '../assets/Menu.png'
+import Border from '../assets/Border.png'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
@@ -55,14 +56,16 @@ const Navbar = () => {
         )}
         {/**Mobile Menu */}
         {toggleMenu && (
-          <ul className='z-10 fixed top-0 -right-2 p-3 w-[70vw] h-screen shadow-2xl md:hidden bg-[#150E28] border-rgba(255, 255, 255, 0.04)'>
-            <li className='m-2'>
-              <div className='flex items-center rounded-full justify-center border-2 w-[30px] h-[30px]  ml-auto m-4'>
-                <Image
-                  src={Cancel}
-                  className='cursor-pointer'
-                  onClick={() => setToggleMenu(false)}
-                />
+          <ul className='z-10 fixed top-0 -right-2 p-3 w-[70vw] h-[30.75rem] shadow-2xl md:hidden bg-[#150E28] border-rgba(255, 255, 255, 0.04)'>
+            <li className='m-2 '>
+              <div className='flex relative items-center rounded-full justify-center   w-[30px] h-[30px]  ml-auto m-4 bg-gradient-to-r from-purple-600 via-pink-500 to-pink-500'>
+                <div className='bg-black w-[25px] h-[25px] rounded-full flex items-center justify-center'>
+                  <Image
+                    src={Cancel}
+                    className='cursor-pointer'
+                    onClick={() => setToggleMenu(false)}
+                  />
+                </div>
               </div>
             </li>
             <li className='m-6'>

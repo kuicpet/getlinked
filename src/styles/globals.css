@@ -18,5 +18,12 @@
 
 body {
   color: rgb(var(--foreground-rgb));
- background-color: #140D27;
+  background-color: #140d27;
+}
+
+/* In your custom CSS or stylesheets */
+.gradient-border {
+  border: 2px solid transparent; /* Set an initial transparent border */
+  background: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
+  background-clip: padding-box; /* Ensure the gradient doesn't cover the border */
 }
