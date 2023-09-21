@@ -27,3 +27,6 @@ body {
   background: linear-gradient(270deg, #903aff 0%, #fe34b9 100%);
   background-clip: padding-box; /* Ensure the gradient doesn't cover the border */
 }
+.shield {
+  background: url('../assets/Shield.png') center -1px no-repeat;
+}
