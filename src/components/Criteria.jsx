@@ -4,7 +4,7 @@ import Group from '../assets/man_woman.png'
 
 const Criteria = () => {
   return (
-    <section className='flex items-center w-full mt-[2rem] flex-col md:flex-row'>
+    <section className='flex items-center w-full mt-[2rem] flex-col md:flex-row border-[#FFFFFF2E] border-b'>
       <div className='w-1/2'>
         <Image src={Group} alt='' />
       </div>

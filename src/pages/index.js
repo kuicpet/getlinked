@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Hero, Navbar, Rules } from '@/components'
+import { Faqs, Hero, Navbar, Rules } from '@/components'
 import Intro from '@/components/Intro'
 import Criteria from '@/components/Criteria'
 
@@ -16,6 +16,7 @@ export default function Home() {
         <Intro />
         <Rules />
         <Criteria />
+        <Faqs />
       </main>
     </>
   )

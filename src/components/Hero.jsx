@@ -5,7 +5,8 @@ import Image from 'next/image'
 
 const Hero = () => {
   return (
-    <section className='w-full flex flex-col'>
+    <section
+      className='w-full flex flex-col border-[#FFFFFF2E] border-b'>
       <div className='flex relative mb-5'>
         <h2 className='ml-auto text-[1.75rem] italic'>
           Igniting a Revolution in HR Innovation

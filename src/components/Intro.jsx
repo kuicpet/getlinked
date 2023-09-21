@@ -3,7 +3,8 @@ import Idea from '../assets/idea.png'
 import Image from 'next/image'
 const Intro = () => {
   return (
-    <section className='flex items-center w-full mt-[2rem] flex-col md:flex-row'>
+    <section
+      className='flex items-center w-full mt-[2rem] flex-col md:flex-row border-[#FFFFFF2E] border-b py-5'>
       <div className='w-1/2'>
         <Image src={Idea} alt='' />
       </div>
