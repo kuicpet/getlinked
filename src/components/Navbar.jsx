@@ -5,9 +5,14 @@ import { Button } from '.'
 import Cancel from '../assets/Cancel.png'
 import Menu from '../assets/Menu.png'
 import Border from '../assets/Border.png'
+import { useRouter } from 'next/router'
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false)
+  const router = useRouter()
+  const handleClick = () => {
+    router.push('/register')
+  }
   return (
     <nav className='w-full p-2 border-b border-b-[rgba(255, 255, 255, 0.18);] flex items-center justify-between'>
       <div>
@@ -35,7 +40,7 @@ const Navbar = () => {
         </li>
 
         <div className=''>
-          <Button text='Register' />
+          <Button text='Register' onClick={handleClick} />
         </div>
       </ul>
       <div className='flex relative m-4'>
@@ -82,7 +87,7 @@ const Navbar = () => {
             </li>
             <li className='m-6'>
               <div className=''>
-                <Button text='Register' />
+                <Button text='Register' onClick={handleClick} />
               </div>
             </li>
           </ul>
