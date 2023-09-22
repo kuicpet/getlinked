@@ -1,6 +1,14 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import { Faqs, Footer, Hero, Navbar, Partners, PrivacyPolicy, Prizes, Rules, Timeline } from '@/components'
+import {
+  Faqs,
+  Hero,
+  Partners,
+  PrivacyPolicy,
+  Prizes,
+  Rules,
+  Timeline,
+} from '@/components'
 import Intro from '@/components/Intro'
 import Criteria from '@/components/Criteria'
 
@@ -9,7 +17,6 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
-      <Navbar />
       <main
         className={`flex min-h-screen flex-col items-center justify-between p-10 ${inter.className}`}>
         <Hero />
@@ -21,7 +28,6 @@ export default function Home() {
         <Prizes />
         <Partners />
         <PrivacyPolicy />
-        <Footer />
       </main>
     </>
   )
