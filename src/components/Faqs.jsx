@@ -87,7 +87,7 @@ const Faqs = () => {
           ))}
         </div>
       </div>
-      <div className='w-1/2'>
+      <div className='w-1/2 purple'>
         <Image src={Think} alt='' />
       </div>
     </section>

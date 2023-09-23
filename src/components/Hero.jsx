@@ -24,10 +24,10 @@ const Hero = () => {
             Big prize
           </p>
           <Button text='Register' />
-          <h3 className='my-6 font-mono'>
-            00<span>H</span>
-            00<span>M</span>
-            00<span>S</span>
+          <h3 className='my-6 timer text-[4rem]'>
+            00<span className='text-sm mr-2'>H</span>
+            00<span className='text-sm mr-2'>M</span>
+            00<span className='text-sm'>S</span>
           </h3>
         </div>
         <div className='md:w-1/2 w-full hero'>

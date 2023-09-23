@@ -8,11 +8,11 @@ import GoldImg from '../assets/gold.png'
 const Prizes = () => {
   return (
     <section className='flex w-full items-center justify-center my-[2rem] border-[#FFFFFF2E] border-b py-[2rem]'>
-      <div className='flex w-full'>
-        <div className='flex w-1/2'>
+      <div className='flex w-full flex-col md:flex-row'>
+        <div className='flex md:w-1/2  purple'>
           <Image src={CupImg} alt='' />
         </div>
-        <div className='flex flex-col w-3/4 '>
+        <div className='flex flex-col md:w-1/2 '>
           <div className=''>
             <h3 className=' text-[2rem] font-bold'>
               Prizes and <br />
@@ -23,8 +23,8 @@ const Prizes = () => {
               the upcoming event.
             </p>
             <div className='flex flex-row w-full my-7 gap-2'>
-              <div className='flex flex-col items-center p-2 justify-center bg-[#D434FE1F] border-[#D434FE] relative border h-[16.5rem] w-1/3 rounded'>
-                <Image src={SilverImg} alt='bronze' className='' width='11rem' />
+              <div className='flex flex-col items-center p-2 justify-center bg-[#D434FE1F] border-[#D434FE] relative border  w-1/3 rounded'>
+                <Image src={SilverImg} alt='bronze' className='' />
                 <div className='flex flex-col items-center mb-3'>
                   <h3 className='text-2xl font-bold'>
                     2nd <br /> Runner
@@ -34,7 +34,7 @@ const Prizes = () => {
                   </h2>
                 </div>
               </div>
-              <div className='flex flex-col items-center justify-center p-2 border bg-[#903AFF1F] relative border-[#903AFF] h-[18.75rem] w-1/3 rounded'>
+              <div className='flex flex-col items-center justify-center p-2 border bg-[#903AFF1F] relative border-[#903AFF]  w-1/3 rounded'>
                 <Image src={GoldImg} alt='bronze' className='w-[18.5rem]' />
                 <div className='flex flex-col items-center mb-3'>
                   <h3 className='text-2xl font-bold'>
@@ -45,7 +45,7 @@ const Prizes = () => {
                   </h2>
                 </div>
               </div>
-              <div className='bg-[#D434FE1F] border border-[#D434FE] relative  w-1/3 h-[16.5rem] rounded'>
+              <div className='bg-[#D434FE1F] border border-[#D434FE] relative  w-1/3  rounded p-2'>
                 <Image src={BronzeImg} alt='bronze' />
                 <div className='flex flex-col items-center mb-3'>
                   <h3 className='text-2xl font-bold'>
