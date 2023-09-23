@@ -44,3 +44,10 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.hero {
+  background: url('../assets/man.png') center/contain no-repeat;
+}
+.purple {
+  background: url('../assets//purple.png') center/contain no-repeat;
+}

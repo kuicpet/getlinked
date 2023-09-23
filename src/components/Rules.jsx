@@ -5,7 +5,7 @@ import Image from 'next/image'
 const Rules = () => {
   return (
     <section
-      className='flex items-center w-full mt-[2rem] flex-col md:flex-row border-[#FFFFFF2E] border-b'>
+      className='flex items-center w-full purple mt-[2rem] flex-col md:flex-row border-[#FFFFFF2E] border-b'>
       <div className='md:w-1/2 w-full m-4'>
         <h4 className='text-[2rem] font-bold'>
           Rules and <br /> <span className='text-[#D434FE]'>Guidelines</span>

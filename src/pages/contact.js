@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from 'next/image'
 import XImg from '../assets/X.png'
 import LinkedInImg from '../assets/LinkedIn.png'
@@ -7,6 +7,15 @@ import FacebookImg from '../assets/Facebook.png'
 import { Button } from '@/components'
 
 const contact = () => {
+  const [fisrt_name, setFirst_name] = useState('')
+  const [message, setMessage] = useState('')
+  const [email, setEmail] = useState('')
+  const [phone_number, setPhone_number] = useState('')
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+  }
+
   return (
     <section className='flex flex-col md:flex-row w-full p-[5rem]'>
       <div className='w-1/2 hidden md:flex flex-col'>
@@ -41,10 +50,12 @@ const contact = () => {
           <div className='text-justify flex flex-col justify-start w-3/4'>
             <h3 className='text-[#D434FE]'>Questions or need assistance?</h3>
             <h3 className='text-[#D434FE]'>Let us know about it!</h3>
-            <p className='text-[0.75rem]'>Email us below to any question related to our event</p>
+            <p className='text-[0.75rem]'>
+              Email us below to any question related to our event
+            </p>
           </div>
           {/**web view */}
-          <form className='w-3/4 '>
+          <form className='w-3/4 ' onSubmit={handleSubmit}>
             <div className='my-2'>
               <label></label>
               <input
