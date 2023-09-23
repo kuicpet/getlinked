@@ -24,23 +24,46 @@ const Navbar = () => {
       </div>
       <ul className='md:flex w-[60%] hidden justify-between ml-auto items-center'>
         <li>
-          <Link href={`/`}>Timeline</Link>
+          <Link href={`/`} className='link-gradient'>
+            Timeline
+          </Link>
         </li>
 
         <li>
-          <Link href={`/`}>Overview</Link>
+          <Link href={`/`} className='link-gradient'>
+            Overview
+          </Link>
         </li>
 
         <li>
-          <Link href={`/`}>FAQs</Link>
+          <Link href={`/`} className='link-gradient'>
+            FAQs
+          </Link>
         </li>
 
         <li>
-          <Link href={`/contact`}>Contact</Link>
+          <Link
+            href={`/contact`}
+            className={`${
+              router.pathname === '/contact' && 'text-gradient'
+            } link-gradient`}>
+            Contact
+          </Link>
         </li>
 
         <div className=''>
-          <Button text='Register' onClick={handleClick} />
+          {router.pathname === '/register' ? (
+            <div className='flex relative p-1 items-center justify-center bg-gradient-to-b from-purple-600 via-pink-500 to-pink-500 w-[10.75rem] h-[2.5rem] rounded-md'>
+              <Link
+                href={'/register'}
+                className='flex items-center justify-center border-none  w-[10rem] h-[2rem]
+              p-2 bg-black'>
+                Register
+              </Link>
+            </div>
+          ) : (
+            <Button text='Register' onClick={handleClick} />
+          )}
         </div>
       </ul>
       <div className='flex relative m-4'>
