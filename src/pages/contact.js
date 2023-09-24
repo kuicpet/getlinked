@@ -17,7 +17,7 @@ const contact = () => {
   }
 
   return (
-    <section className='flex flex-col md:flex-row w-full md:p-[5rem]'>
+    <section className='flex flex-col md:flex-row w-full md:p-[5rem] p-5 my-5'>
       <div className='w-1/2 hidden md:flex flex-col'>
         <h3 className='text-[#D434FE] text-4xl font-semibold py-4'>
           Get in touch
