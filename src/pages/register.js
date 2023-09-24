@@ -36,9 +36,9 @@ const register = () => {
             </p>
             <h2 className='text-2xl'>CREATE YOUR ACCOUNT</h2>
           </div>
-          <form className='w-[90%]' onSubmit={handleSubmit}>
-            <div className='grid grid-cols-2 gap-1 my-5'>
-              <div className='w-[95%]'>
+          <form className='md:w-[90%]' onSubmit={handleSubmit}>
+            <div className='grid md:grid-cols-2 gap-1 my-5'>
+              <div className='md:w-[95%]'>
                 <label>Team’s Name</label>
                 <input
                   value={team_name}
@@ -55,8 +55,8 @@ const register = () => {
                 />
               </div>
             </div>
-            <div className='grid grid-cols-2 gap-1 my-5'>
-              <div className='w-[95%]'>
+            <div className='grid md:grid-cols-2 gap-1 my-5'>
+              <div className='md:w-[95%]'>
                 <label>Email</label>
                 <input
                   value={email}
@@ -73,8 +73,8 @@ const register = () => {
                 />
               </div>
             </div>
-            <div className='grid grid-cols-2 gap-1 my-5'>
-              <div className='w-[95%]'>
+            <div className='grid md:grid-cols-2 gap-1 my-5'>
+              <div className='md:w-[95%]'>
                 <label>Category</label>
                 <select className='border border-white bg-transparent w-full rounded px-2 py-1 outline-none'>
                   <option>Select your category</option>

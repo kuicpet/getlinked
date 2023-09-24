@@ -13,7 +13,7 @@ const Prizes = () => {
           <Image src={CupImg} alt='' />
         </div>
         <div className='flex flex-col md:w-1/2 '>
-          <div className=''>
+          <div className='flex flex-col'>
             <h3 className=' text-[2rem] font-bold'>
               Prizes and <br />
               <span className='text-[#D434FE]'>Rewards</span>
@@ -22,8 +22,8 @@ const Prizes = () => {
               Here is the breakdown of the time we anticipate <br /> using for
               the upcoming event.
             </p>
-            <div className='flex flex-row w-full my-7 gap-2'>
-              <div className='flex flex-col items-center p-2 justify-center bg-[#D434FE1F] border-[#D434FE] relative border  w-1/3 rounded'>
+            <div className='flex md:flex-row flex-col w-full my-7 gap-2'>
+              <div className='flex w-full flex-col items-center p-2 justify-center bg-[#D434FE1F] border-[#D434FE] relative border  md:w-1/3 rounded'>
                 <Image src={SilverImg} alt='bronze' className='' />
                 <div className='flex flex-col items-center mb-3'>
                   <h3 className='text-2xl font-bold'>
@@ -34,7 +34,7 @@ const Prizes = () => {
                   </h2>
                 </div>
               </div>
-              <div className='flex flex-col items-center justify-center p-2 border bg-[#903AFF1F] relative border-[#903AFF]  w-1/3 rounded'>
+              <div className='flex  w-full flex-col items-center justify-center p-2 border bg-[#903AFF1F] relative border-[#903AFF]  md:w-1/3 rounded'>
                 <Image src={GoldImg} alt='bronze' className='w-[18.5rem]' />
                 <div className='flex flex-col items-center mb-3'>
                   <h3 className='text-2xl font-bold'>
@@ -45,7 +45,7 @@ const Prizes = () => {
                   </h2>
                 </div>
               </div>
-              <div className='bg-[#D434FE1F] border border-[#D434FE] relative  w-1/3  rounded p-2'>
+              <div className='bg-[#D434FE1F] flex flex-col w-full items-center border border-[#D434FE] relative  md:w-1/3  rounded p-2'>
                 <Image src={BronzeImg} alt='bronze' />
                 <div className='flex flex-col items-center mb-3'>
                   <h3 className='text-2xl font-bold'>

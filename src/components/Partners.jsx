@@ -19,8 +19,8 @@ const Partners = () => {
           companies as its partners and sponsors
         </p>
       </div>
-      <div className='flex items-center justify-center  rounded-sm border border-[#D434FE] w-3/4 p-6 my-5'>
-        <div className='w-[85%] h-[85%] grid grid-cols-3'>
+      <div className='flex items-center justify-center  rounded-sm border border-[#D434FE] md:w-3/4 w-full p-6 my-5'>
+        <div className='w-[85%] h-[85%]  grid grid-cols-3'>
           <div className='p-3 relative flex items-center justify-center border-b-2 border-r-2 border-[#D434FE]'>
             <Image src={Partner1} alt='' />
           </div>

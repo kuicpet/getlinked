@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
           Below are our privacy & policy, which outline a lot of goodies. it’s
           our aim to always take of our participant
         </p>
-        <div className='flex border-2 border-[#D434FE] flex-col p-10 rounded-md my-4'>
+        <div className='flex border-2 border-[#D434FE] flex-col md:p-10 p-3 rounded-md my-4'>
           <p className='my-5'>
             At getlinked tech Hackathon 1.0, we value your privacy and are
             committed to protecting your personal information. This Privacy
@@ -52,7 +52,7 @@ const PrivacyPolicy = () => {
           </div>
         </div>
       </div>
-      <div className='w-1/2 shield'>
+      <div className='md:w-1/2 w-full shield'>
         <Image src={LockImg} alt='' />
       </div>
     </section>
