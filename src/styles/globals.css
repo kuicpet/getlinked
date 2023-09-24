@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Unica+One&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -21,6 +21,7 @@
 body {
   color: rgb(var(--foreground-rgb));
   background-color: #140d27;
+  font-family: 'Montserrat', sans-serif
 }
 
 /* In your custom CSS or stylesheets */

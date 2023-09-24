@@ -14,7 +14,7 @@ const Hero = () => {
       </div>
       <div className='w-full flex flex-col md:flex-row'>
         <div className='md:w-1/2 w-full purple '>
-          <h1 className='text-[4.5rem] font-bold'>
+          <h1 className='text-4xl lg:text-7xl font-bold'>
             getlinked Tech
             <br />
             Hackathon <span className='text-[#D434FE]'>1.0</span>
